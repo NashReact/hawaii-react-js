@@ -65,10 +65,8 @@ class App extends Component {
     const tick = () =>
       setTimeout(() => {
         this.setState(state => ({ seconds: state.seconds - 1 }));
-        if (this.state.seconds > 0) {
-          tick();
-        }
-      }, 1000);
+        return this.state.seconds < 1 ? undefined : tick();
+    }, 1000);
 
     tick();
   }
