@@ -1,6 +1,19 @@
-import React from "react";
+// @flow
+import * as React from "react";
 
-const Scoreboard = ({ correctAnswers, wrongAnswers, seconds, startTimer }) => (
+type ScoreboardProps = {
+  correctAnswers: number,
+  wrongAnswers: number,
+  seconds: number,
+  startTimer: () => void,
+};
+
+const Scoreboard = ({
+  correctAnswers,
+  wrongAnswers,
+  seconds,
+  startTimer,
+}: ScoreboardProps) => (
   <div>
     {correctAnswers + wrongAnswers + seconds === 0 ? (
       <h3>Welcome to Pick An Island!</h3>

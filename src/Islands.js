@@ -1,5 +1,5 @@
-import React from "react";
-import PropTypes from "prop-types";
+// @flow
+import * as React from "react";
 import Island from "./Island";
 import niihau from "./img/niihau.svg";
 import kauai from "./img/kauai.svg";
@@ -21,7 +21,12 @@ import {
   KAHOOLAWE,
 } from "./constants.js";
 
-const islandData = [
+export type IslandData = {
+  name: string,
+  svg: any,
+};
+
+const islandData: Array<IslandData> = [
   {
     name: NIIHAU,
     svg: niihau,
@@ -56,19 +61,19 @@ const islandData = [
   },
 ];
 
-export default class Islands extends React.Component {
-  static propTypes = {
-    selectedIsland: PropTypes.string.isRequired,
-  };
+type IslandsProps = {
+  selectedIsland: string,
+};
 
+export default class Islands extends React.Component<IslandsProps> {
   static defaultProps = {
     selectedIsland: "",
   };
 
-  render() {
+  render(): React.Fragment {
     return (
       <React.Fragment>
-        {islandData.map(({ name, svg }) => (
+        {islandData.map(({ name, svg }: IslandData) => (
           <Island
             name={name}
             key={name}

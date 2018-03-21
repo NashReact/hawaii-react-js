@@ -1,6 +1,17 @@
-import React from "react";
+// @flow
+import * as React from "react";
 
-const ButtonList = ({ islandNames, onClick, hide }) => (
+type ButtonListProps = {
+  islandNames: string[],
+  onClick: string => void,
+  hide: boolean,
+};
+
+const ButtonList = ({
+  islandNames,
+  onClick,
+  hide,
+}: ButtonListProps): React.Node => (
   <ul className={hide ? "hide" : ""}>
     {islandNames.map(name => (
       <li key={name}>

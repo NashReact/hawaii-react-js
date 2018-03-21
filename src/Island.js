@@ -1,16 +1,17 @@
-import React from "react";
-import PropTypes from "prop-types";
+// @flow
+import * as React from "react";
 
-const Island = ({ name, svg, showBorder }) => (
+type IslandProps = {
+  name: string,
+  svg: any,
+  showBorder: boolean,
+};
+
+const Island = ({ name, svg, showBorder }: IslandProps): React.Node => (
   <div className={`${name.toLowerCase()}${showBorder ? " border" : ""}`}>
     <img src={svg} alt={name} />
   </div>
 );
-
-Island.propTypes = {
-  name: PropTypes.string.isRequired,
-  showBorder: PropTypes.bool,
-};
 
 Island.defaultProps = {
   showBorder: false,
