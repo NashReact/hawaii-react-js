@@ -18,7 +18,7 @@ import {
   LANAI,
   MAUI,
   HAWAII,
-  KAHOOLAWE
+  KAHOOLAWE,
 } from "./constants.js";
 
 export default class Islands extends React.Component {
@@ -71,9 +71,9 @@ export default class Islands extends React.Component {
 }
 
 Islands.propTypes = {
-  selectedIsland: PropTypes.string.isRequired
+  selectedIsland: PropTypes.string.isRequired,
 };
 
 Islands.defaultProps = {
-  selectedIsland: ""
+  selectedIsland: "",
 };

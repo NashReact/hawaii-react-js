@@ -9,11 +9,11 @@ const Island = ({ name, svg, showBorder }) => (
 
 Island.propTypes = {
   name: PropTypes.string.isRequired,
-  showBorder: PropTypes.bool
+  showBorder: PropTypes.bool,
 };
 
 Island.defaultProps = {
-  showBorder: false
+  showBorder: false,
 };
 
 export default Island;

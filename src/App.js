@@ -11,7 +11,7 @@ import {
   LANAI,
   MAUI,
   HAWAII,
-  KAHOOLAWE
+  KAHOOLAWE,
 } from "./constants";
 
 const islandNames = [
@@ -22,7 +22,7 @@ const islandNames = [
   MAUI,
   MOLOKAI,
   NIIHAU,
-  OAHU
+  OAHU,
 ];
 
 const randomIsland = () =>
@@ -32,7 +32,7 @@ const initialState = {
   correctAnswers: 0,
   wrongAnswers: 0,
   selectedIsland: randomIsland(),
-  seconds: 0
+  seconds: 0,
 };
 
 class App extends Component {
@@ -48,25 +48,25 @@ class App extends Component {
       state =>
         name === this.state.selectedIsland
           ? { correctAnswers: state.correctAnswers + 1 }
-          : { wrongAnswers: state.wrongAnswers + 1 }
+          : { wrongAnswers: state.wrongAnswers + 1 },
     );
 
     this.setState({
-      selectedIsland: randomIsland()
+      selectedIsland: randomIsland(),
     });
   }
 
   startTimer() {
     this.setState({
       ...initialState,
-      seconds: 30
+      seconds: 30,
     });
 
     const tick = () =>
       setTimeout(() => {
         this.setState(state => ({ seconds: state.seconds - 1 }));
         return this.state.seconds < 1 ? undefined : tick();
-    }, 1000);
+      }, 1000);
 
     tick();
   }
