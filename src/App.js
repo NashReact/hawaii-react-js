@@ -36,40 +36,35 @@ const initialState = {
 };
 
 class App extends Component {
-  constructor(props) {
-    super(props);
-    this.state = initialState;
-    this.startTimer = this.startTimer.bind(this);
-    this.chooseIsland = this.chooseIsland.bind(this);
-  }
+  state = { ...initialState };
 
-  chooseIsland(name) {
+  chooseIsland = name => {
     this.setState(
       state =>
         name === this.state.selectedIsland
           ? { correctAnswers: state.correctAnswers + 1 }
           : { wrongAnswers: state.wrongAnswers + 1 },
     );
-
     this.setState({
       selectedIsland: randomIsland(),
     });
-  }
+  };
 
-  startTimer() {
+  startTimer = () => {
     this.setState({
       ...initialState,
       seconds: 30,
     });
 
-    const tick = () =>
+    const tick = () => {
       setTimeout(() => {
         this.setState(state => ({ seconds: state.seconds - 1 }));
         return this.state.seconds < 1 ? undefined : tick();
       }, 1000);
+    };
 
     tick();
-  }
+  };
 
   render() {
     return (

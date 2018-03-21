@@ -21,50 +21,52 @@ import {
   KAHOOLAWE,
 } from "./constants.js";
 
+const islandData = [
+  {
+    name: NIIHAU,
+    svg: niihau,
+  },
+  {
+    name: KAUAI,
+    svg: kauai,
+  },
+  {
+    name: OAHU,
+    svg: oahu,
+  },
+  {
+    name: MOLOKAI,
+    svg: molokai,
+  },
+  {
+    name: LANAI,
+    svg: lanai,
+  },
+  {
+    name: MAUI,
+    svg: maui,
+  },
+  {
+    name: HAWAII,
+    svg: hawaii,
+  },
+  {
+    name: KAHOOLAWE,
+    svg: kahoolawe,
+  },
+];
+
 export default class Islands extends React.Component {
   render() {
     return (
       <React.Fragment>
-        <Island
-          name={HAWAII}
-          svg={hawaii}
-          showBorder={this.props.selectedIsland === HAWAII}
-        />
-        <Island
-          name={KAHOOLAWE}
-          svg={kahoolawe}
-          showBorder={this.props.selectedIsland === KAHOOLAWE}
-        />
-        <Island
-          name={KAUAI}
-          svg={kauai}
-          showBorder={this.props.selectedIsland === KAUAI}
-        />
-        <Island
-          name={LANAI}
-          svg={lanai}
-          showBorder={this.props.selectedIsland === LANAI}
-        />
-        <Island
-          name={MAUI}
-          svg={maui}
-          showBorder={this.props.selectedIsland === MAUI}
-        />
-        <Island
-          name={MOLOKAI}
-          svg={molokai}
-          showBorder={this.props.selectedIsland === MOLOKAI}
-        />
-        <Island
-          name={NIIHAU}
-          svg={niihau}
-          showBorder={this.props.selectedIsland === NIIHAU}
-        />
-        <Island
-          name={OAHU}
-          svg={oahu}
-          showBorder={this.props.selectedIsland === OAHU}
-        />
+        {islandData.map(({ name, svg }) => (
+          <Island
+            name={name}
+            svg={svg}
+            showBorder={this.props.selectedIsland === svg}
+          />
+        ))}
       </React.Fragment>
     );
   }
