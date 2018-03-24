@@ -57,6 +57,14 @@ const islandData = [
 ];
 
 export default class Islands extends React.Component {
+  static propTypes = {
+    selectedIsland: PropTypes.string.isRequired,
+  };
+
+  static defaultProps = {
+    selectedIsland: "",
+  };
+
   render() {
     return (
       <React.Fragment>
@@ -72,11 +80,3 @@ export default class Islands extends React.Component {
     );
   }
 }
-
-Islands.propTypes = {
-  selectedIsland: PropTypes.string.isRequired,
-};
-
-Islands.defaultProps = {
-  selectedIsland: "",
-};

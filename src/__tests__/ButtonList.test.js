@@ -22,7 +22,10 @@ describe("ButtonList", () => {
   });
 
   it("clicks the names", () => {
-    cmpt.find("button").at(1).simulate("click");
+    cmpt
+      .find("button")
+      .at(1)
+      .simulate("click");
     expect(clickSpy.mock.calls[0][0]).toBe("MOCK_NAME_TWO");
   });
 });
