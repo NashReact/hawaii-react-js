@@ -15,7 +15,7 @@ Over the next several months, this app wil serve as a template that NashReact at
 
 ## Getting setup
 To see the app in action, simply clone the repo, `yarn && yarn start`.  
-To run the tests (`TODO - write tests`), simply `yarn test`. 
+To run the tests, simply `yarn test`. 
 
 ## SVGs and CSS
 Inside the `src` directory, you will find an `img` directory containing SVGs of all the islands.
