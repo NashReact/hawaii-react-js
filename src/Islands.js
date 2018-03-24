@@ -65,7 +65,7 @@ export default class Islands extends React.Component {
             name={name}
             key={name}
             svg={svg}
-            showBorder={this.props.selectedIsland === svg}
+            showBorder={this.props.selectedIsland === name}
           />
         ))}
       </React.Fragment>
