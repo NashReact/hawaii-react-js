@@ -1,10 +1,10 @@
 import React from "react";
 
-const ButtonList = ({ data, callback, hide }) => (
+const ButtonList = ({ data, onClick, hide }) => (
   <ul className={hide ? "hide" : ""}>
     {data.map(name => (
       <li key={name}>
-        <button onClick={() => callback(name)}>{name}</button>
+        <button onClick={() => onClick(name)}>{name}</button>
       </li>
     ))}
   </ul>

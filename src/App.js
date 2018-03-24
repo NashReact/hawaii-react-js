@@ -81,7 +81,7 @@ class App extends Component {
           />
           <ButtonList
             data={islandNames}
-            callback={this.chooseIsland}
+            onClick={this.chooseIsland}
             hide={this.state.seconds === 0}
           />
         </div>

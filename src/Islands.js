@@ -63,6 +63,7 @@ export default class Islands extends React.Component {
         {islandData.map(({ name, svg }) => (
           <Island
             name={name}
+            key={name}
             svg={svg}
             showBorder={this.props.selectedIsland === svg}
           />
