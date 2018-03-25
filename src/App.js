@@ -80,7 +80,7 @@ class App extends Component {
             startTimer={this.startTimer}
           />
           <ButtonList
-            data={islandNames}
+            islandNames={islandNames}
             onClick={this.chooseIsland}
             hide={this.state.seconds === 0}
           />

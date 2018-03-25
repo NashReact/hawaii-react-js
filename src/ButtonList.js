@@ -1,8 +1,8 @@
 import React from "react";
 
-const ButtonList = ({ data, onClick, hide }) => (
+const ButtonList = ({ islandNames, onClick, hide }) => (
   <ul className={hide ? "hide" : ""}>
-    {data.map(name => (
+    {islandNames.map(name => (
       <li key={name}>
         <button onClick={() => onClick(name)}>{name}</button>
       </li>
