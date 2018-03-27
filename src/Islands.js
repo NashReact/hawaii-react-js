@@ -21,12 +21,12 @@ import {
   KAHOOLAWE,
 } from "./constants.js";
 
-export type IslandData = {
+type NameAndSvg = {
   name: string,
   svg: any,
 };
 
-const islandData: Array<IslandData> = [
+const islandData: Array<NameAndSvg> = [
   {
     name: NIIHAU,
     svg: niihau,
@@ -73,7 +73,7 @@ export default class Islands extends React.Component<IslandsProps> {
   render(): React.Fragment {
     return (
       <React.Fragment>
-        {islandData.map(({ name, svg }: IslandData) => (
+        {islandData.map(({ name, svg }: NameAndSvg) => (
           <Island
             name={name}
             key={name}
