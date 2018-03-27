@@ -6,19 +6,17 @@
 ** About me
    Work at LifeWay
    Likes my keyboard
-   No social media
-   DanPosts.com
    Lots of epubs
    Lib for epubs
 ** Expectations
    Learning pyramid [[http://www.fitnyc.edu/images/learning-pyramid.jpg]] (disputable accuracy- stay calm!)
-   Giving questions rather than giving answers
+   Questions rather than answers
 * About this project
 ** Genesis
    Silly comments and big aspirations
 ** Original Plan- out the window!
    ScalaJS-React
-   Scalajs-React [[https://japgolly.github.io/scalajs-react/]]
+   ScalaJS-React [[https://japgolly.github.io/scalajs-react/]]
    Because I saw [[https://reasonml.github.io/reason-react/]]
    What to do?
    (if (like-parens?) [[https://github.com/omcljs/om]])
@@ -26,7 +24,6 @@
 ** Beyond "hello, world!", but not by much
    Beginner friendly syntax and setup (CRA duh).
    A couple stateless components
-   Tests
    No egregious mistakes
    Good test coverage
    Limited extra dependencies
