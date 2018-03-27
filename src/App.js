@@ -1,4 +1,5 @@
-import React, { Component } from "react";
+// @flow
+import * as React from "react";
 import "./App.css";
 import Islands from "./Islands";
 import Scoreboard from "./Scoreboard";
@@ -35,7 +36,7 @@ const initialState = {
   seconds: 0,
 };
 
-class App extends Component {
+class App extends React.Component {
   state = { ...initialState };
 
   chooseIsland = name => {

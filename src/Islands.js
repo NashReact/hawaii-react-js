@@ -1,4 +1,5 @@
-import React from "react";
+// @flow
+import * as React from "react";
 import PropTypes from "prop-types";
 import Island from "./Island";
 import niihau from "./img/niihau.svg";
