@@ -9,7 +9,7 @@ describe("ButtonList", () => {
 
   beforeEach(() => {
     cmpt = shallow(
-      <ButtonList data={dataMock} onClick={clickSpy} hide={false} />,
+      <ButtonList islandNames={dataMock} onClick={clickSpy} hide={false} />,
     );
   });
 
