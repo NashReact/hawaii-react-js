@@ -1,0 +1,46 @@
+#+TITLE: NashReact Hawaii-React-JS
+#+AUTHOR: Dan Hodges
+#+DATE: 2018-03-27
+
+* Intro
+** About me
+   Work at LifeWay
+   Likes my keyboard
+   No social media
+   DanPosts.com
+   Lots of epubs
+   Lib for epubs
+** Expectations
+   Learning pyramid [[http://www.fitnyc.edu/images/learning-pyramid.jpg]] (disputable accuracy- stay calm!)
+   Giving questions rather than giving answers
+* About this project
+** Genesis
+   Silly comments and big aspirations
+** Original Plan- out the window!
+   ScalaJS-React
+   Scalajs-React [[https://japgolly.github.io/scalajs-react/]]
+   Because I saw [[https://reasonml.github.io/reason-react/]]
+   What to do?
+   (if (like-parens?) [[https://github.com/omcljs/om]])
+   But that's exhuasting... Learning's hard ... how about just types and functions? [[https://github.com/tysoncadenhead/coffee-ratios]]
+** Beyond "hello, world!", but not by much
+   Beginner friendly syntax and setup (CRA duh).
+   A couple stateless components
+   Tests
+   No egregious mistakes
+   Good test coverage
+   Limited extra dependencies
+
+   Low time commitment
+   Make things move on a screen
+   Easy to host?
+* The app
+[[http://namethatisland-js.s3-website-us-east-1.amazonaws.com/]]
+[[https://github.com/NashReact/hawaii-react-js]]
+
+[[https://github.com/prettier/prettier]]
+
+
+** flow types
+[[https://github.com/facebook/create-react-app/blob/master/packages/react-scripts/template/README.md#adding-flow]]
+[[https://github.com/NashReact/hawaii-react-js/compare/master...flow]]
