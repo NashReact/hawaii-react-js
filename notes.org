@@ -20,6 +20,7 @@
    Because I saw [[https://reasonml.github.io/reason-react/]]
    What to do?
    (if (like-parens?) [[https://github.com/omcljs/om]])
+   There are good reasons for this- [[https://hackernoon.com/functional-programming-in-javascript-is-an-antipattern-58526819f21e]]
    But that's exhuasting... Learning's hard ... how about just types and functions? [[https://github.com/tysoncadenhead/coffee-ratios]]
 ** Beyond "hello, world!", but not by much
    Beginner friendly syntax and setup (CRA duh).
