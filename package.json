@@ -15,7 +15,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "prettier": "prettier \"src/**/*.js\" --write"
+    "prettier": "prettier \"src/**/*.js\" --write",
+    "flow": "flow",
+    "flow-head": "yarn run flow 2>/dev/null --color=always | head -n 14"
   },
   "prettier": {
     "trailingComma": "all"
