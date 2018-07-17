@@ -1,0 +1,92 @@
+.App {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+}
+
+.border {
+  border: 2px solid red;
+}
+
+.hide {
+  display: none;
+}
+
+.dashboard {
+  background: green;
+  height: 400px;
+  width: 500px;
+}
+
+.dashboard li {
+  list-style: none;
+}
+
+.ocean {
+  position: relative;
+  background: #b3d9fb;
+  height: 400px;
+  width: 500px;
+}
+
+.ocean div {
+  position: absolute;
+}
+
+.niihau {
+  top: 50px;
+  left: 35px;
+  height: 30px;
+  width: 20px;
+}
+
+.kauai {
+  top: 15px;
+  left: 75px;
+  height: 45px;
+  width: 45px;
+}
+
+.oahu {
+  top: 55px;
+  left: 205px;
+  height: 50px;
+  width: 50px;
+}
+
+.molokai {
+  top: 105px;
+  left: 280px;
+  height: 15px;
+  width: 45px;
+}
+
+.lanai {
+  top: 130px;
+  left: 300px;
+  height: 20px;
+  width: 25px;
+}
+
+.maui {
+  top: 115px;
+  left: 315px;
+  height: 30px;
+  width: 55px;
+}
+.kahoolawe {
+  top: 150px;
+  left: 325px;
+  height: 8px;
+  width: 12px;
+}
+.hawaii {
+  top: 170px;
+  left: 360px;
+  height: 100px;
+  width: 100px;
+}
