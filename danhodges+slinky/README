@@ -1,0 +1,3 @@
+# Build & Run
+
+`$ sbt fastOptJS::startWebpackDevServer ~fastOptJS`
